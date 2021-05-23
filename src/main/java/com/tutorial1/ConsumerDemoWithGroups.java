@@ -12,11 +12,11 @@ import java.time.Duration;
 import java.util.Collections;
 import java.util.Properties;
 
-public class ConsumerDemo {
+public class ConsumerDemoWithGroups {
 
     public static void main(String[] args) {
 
-        Logger logger = LoggerFactory.getLogger(ConsumerDemo.class.getName());
+        Logger logger = LoggerFactory.getLogger(ConsumerDemoWithGroups.class.getName());
         String bootstrapServers = "127.0.0.1:9092";
         String groupId = "my-fifth-application";
         String topic = "secondTopic";
