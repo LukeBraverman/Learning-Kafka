@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LearningKafka" />
+        <module name="KafkaBasics" />
+        <module name="KafkaProducerTwitter" />
       </profile>
     </annotationProcessing>
   </component>
