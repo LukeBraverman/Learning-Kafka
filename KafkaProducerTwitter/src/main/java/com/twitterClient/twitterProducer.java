@@ -70,7 +70,7 @@ Client client = createTwitterClients(msgQueue);
             }
             if (msg != null) {
                 logger.info(msg);
-                producer.send(new ProducerRecord<>("twitter_tweers", null, msg), new Callback() {
+                producer.send(new ProducerRecord<>("twitter_tweets", null, msg), new Callback() {
                     @Override
                     public void onCompletion(RecordMetadata recordMetadata, Exception e) {
                         if (e != null) {
@@ -98,7 +98,7 @@ Client client = createTwitterClients(msgQueue);
         StatusesFilterEndpoint hosebirdEndpoint = new StatusesFilterEndpoint();
 // Optional: set up some followings and track terms
 
-        List<String> terms = Lists.newArrayList("bitcoin", "use", "politics", "sport");
+        List<String> terms = Lists.newArrayList("bitcoin");
         hosebirdEndpoint.trackTerms(terms);
 
 // These secrets should be read from a config file

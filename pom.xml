@@ -11,6 +11,7 @@
     <modules>
         <module>KafkaBasics</module>
         <module>KafkaProducerTwitter</module>
+        <module>kafka-coonsumer-elasticsearch</module>
     </modules>
 
     <properties>
