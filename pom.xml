@@ -12,6 +12,7 @@
         <module>KafkaBasics</module>
         <module>KafkaProducerTwitter</module>
         <module>kafka-coonsumer-elasticsearch</module>
+        <module>kafka-streams-filter-tweets</module>
     </modules>
 
     <properties>
